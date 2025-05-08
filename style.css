@@ -49,3 +49,33 @@ body {
     justify-content: center;
     font-weight: bold;
 }
+/* Cápsulas */
+.capsule-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.capsule-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.capsule {
+  flex: 0 0 auto;
+  background: linear-gradient(135deg, #6C63FF, #63B3FF);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.capsule:hover {
+  background: linear-gradient(135deg, #5a54e6, #529ee6);
+}
