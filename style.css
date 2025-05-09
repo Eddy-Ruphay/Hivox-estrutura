@@ -49,3 +49,35 @@ body {
     justify-content: center;
     font-weight: bold;
 }
+
+/* Estilo das cápsulas + clarear ao clicar */
+.capsule-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.capsule {
+  flex: 0 0 auto;
+  background-color: #f8c8dc;
+  color: #333;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.capsule:nth-child(2) { background-color: #c8e6f8; }
+.capsule:nth-child(3) { background-color: #d5f8c8; }
+.capsule:nth-child(4) { background-color: #f8f3c8; }
+.capsule:nth-child(5) { background-color: #f8d5c8; }
+.capsule:nth-child(6) { background-color: #e0c8f8; }
+
+/* Efeito de clarear ao clicar */
+.capsule.active {
+  background-color: #ffffff;
+  color: #000;
+}
